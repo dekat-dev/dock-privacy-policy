@@ -23,48 +23,58 @@
 <body>
 
 <h1>Privacy Policy for Dock</h1>
-<p class="updated">Last updated: October 12, 2026</p>
+<p class="updated">Last updated: October 16, 2026</p>
 
-<p>Dock is developed by Dekat ("we," "us"). This policy explains what information Dock collects, how it's used, and your choices, in plain terms that match exactly what the app actually does today.</p>
+<p>Dock is developed by Dekat ("we," "us"). This policy explains what information Dock collects, how it's used, and your choices, in plain terms that match exactly what the app actually does.</p>
 
 <h2>The short version</h2>
-<p>Everything Dock tracks, including your paired tag, lock history, modes, schedules, and blocked-app lists, stays on your device. Nothing is sent to us or anyone else. There's no account, no sign-in, and no server Dock talks to.</p>
+<p>Everything Dock tracks, including your paired tag, lock history, modes, schedules, and blocked-app lists, stays on your device. We don't run any server, there's no Dock account, and nothing is ever sent to us. Data only leaves your phone in three cases, each handled by Google: ads in the free version (Google AdMob), purchases (Google Play), and Google Drive backup if you choose to turn it on.</p>
 
 <h2>What Dock stores, and where</h2>
-<p>All of the following is stored locally on your device only, in Dock's own private app storage:</p>
+<p>All of the following is stored locally on your device, in Dock's own private app storage:</p>
 <ul>
   <li><strong>Your paired NFC tag's ID</strong>: so Dock can recognize your tag on future taps.</li>
   <li><strong>Dock/undock history</strong>: timestamps and durations of each session, used to build the Activity tab's charts and averages.</li>
   <li><strong>Modes, schedules, and your blocked app/website selections</strong>: whatever you've configured.</li>
+  <li><strong>Your theme and purchases</strong>: which theme you've applied, and which themes or upgrades you own, so Dock can unlock them.</li>
   <li><strong>Blocked notifications</strong>: if a notification arrives from a blocked app while you're docked, Dock records that app's name, the notification's title and text, and when it arrived, so you can see what you missed without unblocking the app. This is cleared automatically at the start of your next lock.</li>
 </ul>
-<p>None of this is transmitted anywhere. Uninstalling Dock deletes all of it permanently.</p>
+<p>Uninstalling Dock deletes all of it from your device. If your phone's own Android backup is turned on, Android may include Dock's app data in your device backup, stored by Google in your Google account, the same as it does for other apps; you control this in your phone's backup settings.</p>
+
+<h2>Ads (free version)</h2>
+<p>The free version of Dock shows banner ads served by <strong>Google AdMob</strong>. To deliver and measure ads, Google's ads software collects information such as your device's advertising ID, IP address, and basic device and app-usage information. This goes to Google, not to us. Dock Pro removes ads.</p>
+<p>You can reset or delete your advertising ID in your phone's settings (Settings → Google → Ads, or Settings → Privacy → Ads). <a href="https://policies.google.com/technologies/partner-sites">Learn how Google uses this information</a>.</p>
+
+<h2>Purchases</h2>
+<p>Dock Pro, themes, and Emergency Undock purchases are processed entirely by <strong>Google Play</strong>. Dock never sees or stores your payment details. Google Play tells Dock what you've bought, so Dock can unlock it and restore it if you reinstall.</p>
+
+<h2>Google Drive backup (optional, off by default)</h2>
+<p>If you turn on Google Drive backup in Settings, Dock saves one small file to <strong>your own Google Drive</strong> containing your modes, schedules, chosen mode, applied theme, and paired tag's ID. Your lock history and blocked notifications are never backed up.</p>
+<ul>
+  <li><strong>Where it's stored</strong>: in Google Drive's hidden app data folder. It doesn't appear in your Drive file list, and Dock can only see its own file there, never your other files.</li>
+  <li><strong>Who can see it</strong>: only you, through Dock. The file travels directly between your phone and your Google Drive; it never passes through us.</li>
+  <li><strong>Your Google account</strong>: you pick the account with Android's account picker. Dock keeps that account's email address on your device, only to show you where your backup is.</li>
+  <li><strong>Turning it off</strong>: deletes the backup file from your Drive. You can also remove Dock's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+<p>Dock's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. That information is used only to back up and restore your Dock setup, is never sold, never used for advertising, and never shared with anyone.</p>
 
 <h2>Permissions Dock uses, and why</h2>
 <ul>
   <li><strong>NFC</strong>: to read your physical tag and trigger a lock/unlock.</li>
-  <li><strong>Accessibility Service</strong>: this is the permission that lets Dock actually block apps and enforce Strict Mode. Specifically, it reads the package name of whichever app is in the foreground, to check it against your blocked list, and for web browsers specifically, reads the address bar's URL to check it against your blocked websites list. It does <strong>not</strong> read message content, keystrokes, passwords, or any other on-screen text or content. It only reads the foreground app's identity and, for browsers, the URL bar.</li>
+  <li><strong>Accessibility Service</strong>: this is the permission that lets Dock actually block apps and enforce Strict Mode. Specifically, it reads the package name of whichever app is in the foreground, to check it against your blocked list, and for web browsers specifically, reads the address bar's URL to check it against your blocked websites list. It does <strong>not</strong> read message content, keystrokes, passwords, or any other on-screen text or content. It only reads the foreground app's identity and, for browsers, the URL bar. None of this leaves your device.</li>
   <li><strong>Notifications (post + listener access)</strong>: to detect and record notifications from blocked apps while you're docked (see "Blocked notifications" above), and to show Dock's own status notifications.</li>
   <li><strong>Schedule exact alarm</strong>: so scheduled locks/unlocks fire at the exact minute you set, rather than being delayed by the system.</li>
   <li><strong>Boot completed</strong>: to re-arm your schedules after your phone restarts.</li>
+  <li><strong>Internet and advertising ID</strong>: for ads in the free version, purchases, and Google Drive backup, as described above.</li>
 </ul>
 
 <h2>What Dock does not do</h2>
 <ul>
-  <li>No account or sign-in is required to use any current feature.</li>
-  <li>No analytics, tracking, or advertising SDKs are included in the app today.</li>
-  <li>No data is sold or shared with third parties.</li>
-  <li>No data leaves your device.</li>
+  <li>No Dock account or sign-in is needed. Google Drive backup uses your existing Google account, only if you turn it on.</li>
+  <li>No analytics or tracking of our own.</li>
+  <li>No data is sold.</li>
+  <li>Nothing is ever sent to us.</li>
 </ul>
-
-<h2>Planned features (not yet live)</h2>
-<p>This policy will be updated before each of these ships, but in brief:</p>
-<ul>
-  <li><strong>Ads</strong>: a future free-tier version of Dock may show ads served by Google AdMob. AdMob's own data practices will apply to ad delivery at that point, and this policy will be updated with specifics and a link to Google's own privacy policy.</li>
-  <li><strong>In-app purchases</strong>: a future paid unlock and optional emergency-exit purchases will be processed entirely through Google Play Billing. Dock never sees or stores your payment details; Google handles that directly.</li>
-  <li><strong>Optional Google Drive backup</strong>: a future, strictly opt-in setting (off by default) that would back up your settings, modes, and schedules, but not your lock/activity history, to your own Google Drive, using Google's app-private storage scope that only Dock can read.</li>
-</ul>
-<p>None of these exist in the app yet. If you're reading this and any of the above is live, this section will have been replaced with the real details.</p>
 
 <h2>Children's privacy</h2>
 <p>Dock is not directed at children and does not knowingly collect data from children.</p>
